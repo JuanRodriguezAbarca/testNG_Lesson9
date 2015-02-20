@@ -1,0 +1,28 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+
+public class testNGtest {
+	
+	WebDriver driver = new FirefoxDriver();
+	
+	@BeforeClass
+	public void opener(){
+		driver.get("https://www.google.es/");
+	}
+	
+	@AfterClass
+	public void closer(){
+		driver.close();
+	}
+	
+	@Test
+	public void test1(){
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+
+}

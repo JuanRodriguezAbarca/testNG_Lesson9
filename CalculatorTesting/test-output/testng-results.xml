@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54" started-at="2015-02-20T16:21:08Z" finished-at="2015-02-20T16:21:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54" started-at="2015-02-20T16:21:08Z" finished-at="2015-02-20T16:21:08Z">
+      <class name="testNGtest">
+        <test-method status="PASS" signature="dataProviderTest()[pri:0, instance:testNGtest@4145bad8]" name="dataProviderTest" duration-ms="23" started-at="2015-02-20T17:21:08Z" finished-at="2015-02-20T17:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method status="PASS" signature="executeOperation(java.lang.String)[pri:0, instance:testNGtest@4145bad8]" name="executeOperation" duration-ms="1" started-at="2015-02-20T17:21:08Z" data-provider="execute-strings" finished-at="2015-02-20T17:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2*2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeOperation -->
+        <test-method status="PASS" signature="executeOperation(java.lang.String)[pri:0, instance:testNGtest@4145bad8]" name="executeOperation" duration-ms="1" started-at="2015-02-20T17:21:08Z" data-provider="execute-strings" finished-at="2015-02-20T17:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3+5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeOperation -->
+      </class> <!-- testNGtest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
