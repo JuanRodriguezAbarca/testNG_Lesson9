@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Test Suite Juan]" parallel="methods">
+  <test name="Threads and order tests(failed)" parallel="methods">
     <classes>
-      <class name="tests.SimpleTest">
+      <class name="tests.GroupsDepsTests">
         <methods>
-          <include name="simpleTest"/>
+          <include name="initCalculator"/>
         </methods>
-      </class> <!-- tests.SimpleTest -->
+      </class> <!-- tests.GroupsDepsTests -->
+      <class name="tests.CalcTest">
+        <methods>
+          <include name="cleaner"/>
+          <include name="initCalculator"/>
+        </methods>
+      </class> <!-- tests.CalcTest -->
+      <class name="tests.SimpleOrderTest">
+        <methods>
+          <include name="checkAddition"/>
+          <include name="initCalculator"/>
+        </methods>
+      </class> <!-- tests.SimpleOrderTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Threads and order tests(failed) -->
+  <test name="Groups expected Exception, data provider example(failed)" parallel="methods">
+    <classes>
+      <class name="tests.GroupsDepsTests">
+        <methods>
+          <include name="checkMultiplication" invocation-numbers="2"/>
+          <include name="initCalculator"/>
+        </methods>
+      </class> <!-- tests.GroupsDepsTests -->
+      <class name="tests.CalcTest">
+        <methods>
+          <include name="cleaner"/>
+          <include name="initCalculator"/>
+        </methods>
+      </class> <!-- tests.CalcTest -->
+      <class name="tests.SimpleOrderTest">
+        <methods>
+          <include name="initCalculator"/>
+        </methods>
+      </class> <!-- tests.SimpleOrderTest -->
+    </classes>
+  </test> <!-- Groups expected Exception, data provider example(failed) -->
+</suite> <!-- Failed suite [Test Suite Juan] -->

@@ -1,37 +1,366 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" total="44" passed="42">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38" started-at="2015-02-22T17:06:57Z" finished-at="2015-02-22T17:06:57Z">
+  <suite name="Test Suite Juan" duration-ms="141" started-at="2015-02-22T17:12:29Z" finished-at="2015-02-22T17:12:29Z">
     <groups>
+      <group name="positive">
+        <method signature="GroupsDepsTests.checkAddition()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkAddition" class="tests.GroupsDepsTests"/>
+        <method signature="GroupsDepsTests.checkMultiplication(double, double, double)[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkMultiplication" class="tests.GroupsDepsTests"/>
+        <method signature="GroupsDepsTests.checkSubstraction()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkSubstraction" class="tests.GroupsDepsTests"/>
+      </group> <!-- positive -->
     </groups>
-    <test name="Default test" duration-ms="38" started-at="2015-02-22T17:06:57Z" finished-at="2015-02-22T17:06:57Z">
+    <test name="Calc Test" duration-ms="36" started-at="2015-02-22T17:12:29Z" finished-at="2015-02-22T17:12:29Z">
       <class name="tests.CalcTest">
-        <test-method status="PASS" signature="initCalculator()[pri:0, instance:tests.CalcTest@725bef66]" name="initCalculator" is-config="true" duration-ms="13" started-at="2015-02-22T18:06:57Z" description="Initialazing" finished-at="2015-02-22T18:06:57Z">
+        <test-method status="PASS" signature="initCalculator()[pri:0, instance:tests.CalcTest@725bef66]" name="initCalculator" is-config="true" duration-ms="9" started-at="2015-02-22T18:12:29Z" description="Initialazing" finished-at="2015-02-22T18:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initCalculator -->
-        <test-method status="PASS" signature="checkDivision()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivision" duration-ms="6" started-at="2015-02-22T18:06:57Z" description="Division simple check" finished-at="2015-02-22T18:06:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkDivision -->
-        <test-method status="PASS" signature="setInToMemory()[pri:0, instance:tests.CalcTest@725bef66]" name="setInToMemory" duration-ms="1" started-at="2015-02-22T18:06:57Z" description="Save to memory" finished-at="2015-02-22T18:06:57Z">
+        <test-method status="PASS" signature="setInToMemory()[pri:0, instance:tests.CalcTest@725bef66]" name="setInToMemory" duration-ms="5" started-at="2015-02-22T18:12:29Z" description="Save to memory" finished-at="2015-02-22T18:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setInToMemory -->
-        <test-method status="PASS" signature="checkDivisionWithInMemory()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivisionWithInMemory" duration-ms="1" started-at="2015-02-22T18:06:57Z" description="Check division with &quot;In Memory&quot;" depends-on-methods="tests.CalcTest.setInToMemory" finished-at="2015-02-22T18:06:57Z">
+        <test-method status="PASS" signature="checkDivision()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivision" duration-ms="7" started-at="2015-02-22T18:12:29Z" description="Division simple check" finished-at="2015-02-22T18:12:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkDivisionWithInMemory -->
-        <test-method status="PASS" signature="checkDivisionWithInMemoryValue()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivisionWithInMemoryValue" duration-ms="0" started-at="2015-02-22T18:06:57Z" description="Check division stored in memory value" depends-on-methods="tests.CalcTest.setInToMemory" finished-at="2015-02-22T18:06:57Z">
+        </test-method> <!-- checkDivision -->
+        <test-method status="PASS" signature="checkDivisionWithInMemoryValue()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivisionWithInMemoryValue" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Check division stored in memory value" depends-on-methods="tests.CalcTest.setInToMemory" finished-at="2015-02-22T18:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDivisionWithInMemoryValue -->
-        <test-method status="PASS" signature="cleaner()[pri:0, instance:tests.CalcTest@725bef66]" name="cleaner" is-config="true" duration-ms="0" started-at="2015-02-22T18:06:57Z" description="Cleaning Memory" finished-at="2015-02-22T18:06:57Z">
+        <test-method status="PASS" signature="checkDivisionWithInMemory()[pri:0, instance:tests.CalcTest@725bef66]" name="checkDivisionWithInMemory" duration-ms="2" started-at="2015-02-22T18:12:29Z" description="Check division with &quot;In Memory&quot;" depends-on-methods="tests.CalcTest.setInToMemory" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionWithInMemory -->
+        <test-method status="PASS" signature="cleaner()[pri:0, instance:tests.CalcTest@725bef66]" name="cleaner" is-config="true" duration-ms="0" started-at="2015-02-22T18:12:29Z" description="Cleaning Memory" finished-at="2015-02-22T18:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleaner -->
       </class> <!-- tests.CalcTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Calc Test -->
+    <test name="Threads and order tests" duration-ms="53" started-at="2015-02-22T17:12:29Z" finished-at="2015-02-22T17:12:29Z">
+      <class name="tests.SimpleOrderTest">
+        <test-method status="PASS" signature="initCalculator()[pri:0, instance:tests.SimpleOrderTest@d041cf]" name="initCalculator" is-config="true" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Intialaizng" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initCalculator -->
+        <test-method status="PASS" signature="checkResta()[pri:0, instance:tests.SimpleOrderTest@d041cf]" name="checkResta" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Substraction" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResta -->
+        <test-method status="PASS" signature="checkMultip()[pri:0, instance:tests.SimpleOrderTest@d041cf]" name="checkMultip" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Multiplication" depends-on-methods="tests.SimpleOrderTest.checkResta" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultip -->
+        <test-method status="FAIL" signature="checkAddition()[pri:0, instance:tests.SimpleOrderTest@d041cf]" name="checkAddition" duration-ms="2" started-at="2015-02-22T18:12:29Z" description="Suma" finished-at="2015-02-22T18:12:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [3.5] but found [5.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [3.5] but found [5.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.SimpleOrderTest.checkAddition(SimpleOrderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddition -->
+      </class> <!-- tests.SimpleOrderTest -->
+      <class name="tests.ThreaddsTest">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="2" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="9" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="2" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="3" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="7" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="5" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="2" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="7" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="1" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="5" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:tests.ThreaddsTest@129a8472]" name="checkThreads" duration-ms="0" started-at="2015-02-22T18:12:29Z" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+      </class> <!-- tests.ThreaddsTest -->
+    </test> <!-- Threads and order tests -->
+    <test name="Groups expected Exception, data provider example" duration-ms="14" started-at="2015-02-22T17:12:29Z" finished-at="2015-02-22T17:12:29Z">
+      <class name="tests.GroupsDepsTests">
+        <test-method status="PASS" signature="initCalculator()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="initCalculator" is-config="true" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Initilaizing" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initCalculator -->
+        <test-method status="PASS" signature="checkSubstraction()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkSubstraction" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Substraction" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubstraction -->
+        <test-method status="PASS" signature="checkAddition()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkAddition" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Addition" finished-at="2015-02-22T18:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddition -->
+        <test-method status="PASS" signature="checkMultiplication(double, double, double)[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkMultiplication" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Multiplication" data-provider="multiplication" finished-at="2015-02-22T18:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplication -->
+        <test-method status="PASS" signature="checkMultiplication(double, double, double)[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkMultiplication" duration-ms="2" started-at="2015-02-22T18:12:29Z" description="Multiplication" data-provider="multiplication" finished-at="2015-02-22T18:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplication -->
+        <test-method status="FAIL" signature="checkMultiplication(double, double, double)[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkMultiplication" duration-ms="0" started-at="2015-02-22T18:12:29Z" description="Multiplication" data-provider="multiplication" finished-at="2015-02-22T18:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1.0] but found [0.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.GroupsDepsTests.checkMultiplication(GroupsDepsTests.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplication -->
+        <test-method status="PASS" signature="checkMultiplication(double, double, double)[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkMultiplication" duration-ms="1" started-at="2015-02-22T18:12:29Z" description="Multiplication" data-provider="multiplication" finished-at="2015-02-22T18:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[121]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMultiplication -->
+        <test-method status="PASS" signature="checkDivisionByZero()[pri:0, instance:tests.GroupsDepsTests@1d251891]" name="checkDivisionByZero" duration-ms="1" depends-on-groups="positive" started-at="2015-02-22T18:12:29Z" description="Division by 0 test" finished-at="2015-02-22T18:12:29Z">
+          <exception class="app.DivisionByZeroException">
+            <message>
+              <![CDATA[Division By Zero!!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[app.DivisionByZeroException: Division By Zero!!!
+	at app.Calculator.division(Calculator.java:38)
+	at tests.GroupsDepsTests.checkDivisionByZero(GroupsDepsTests.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- app.DivisionByZeroException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivisionByZero -->
+      </class> <!-- tests.GroupsDepsTests -->
+    </test> <!-- Groups expected Exception, data provider example -->
+  </suite> <!-- Test Suite Juan -->
 </testng-results>

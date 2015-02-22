@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Test_Suite_Juan">
+              <span class="suite-name border-failed">Test Suite Juan</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Juan_Rodriguez\AppData\Local\Temp\testng-eclipse--166659967\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Suite_Juan">
+                    <span>D:\Tutorial Automation\TestAutomationFundamentals Curse\9 Lesson_XUnit&TestNG\lesson6_javaProject\CalculatorTesting\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Suite_Juan">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-Test_Suite_Juan">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Test_Suite_Juan">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Suite_Juan">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Suite_Juan">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Suite_Juan">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,36 +90,245 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">44 methods, 2 failed,   42 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Suite_Juan" class="hide-methods failed suite-Test_Suite_Juan"> (hide)</a> <!-- hide-methods failed suite-Test_Suite_Juan -->
+                      <a href="#" panel-name="suite-Test_Suite_Juan" class="show-methods failed suite-Test_Suite_Juan"> (show)</a> <!-- show-methods failed suite-Test_Suite_Juan -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Suite_Juan">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.SimpleOrderTest" hash-for-method="checkAddition">checkAddition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkMultiplication(0, 3, 0)">checkMultiplication(0, 3, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Suite_Juan -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Test_Suite_Juan" class="hide-methods passed suite-Test_Suite_Juan"> (hide)</a> <!-- hide-methods passed suite-Test_Suite_Juan -->
+                      <a href="#" panel-name="suite-Test_Suite_Juan" class="show-methods passed suite-Test_Suite_Juan"> (show)</a> <!-- show-methods passed suite-Test_Suite_Juan -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Test_Suite_Juan">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CalcTest" hash-for-method="checkDivision">checkDivision</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkAddition">checkAddition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CalcTest" hash-for-method="checkDivisionWithInMemory">checkDivisionWithInMemory</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.CalcTest" hash-for-method="checkDivision">checkDivision</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CalcTest" hash-for-method="checkDivisionWithInMemoryValue">checkDivisionWithInMemoryValue</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkDivisionByZero">checkDivisionByZero</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CalcTest" hash-for-method="setInToMemory">setInToMemory</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.CalcTest" hash-for-method="checkDivisionWithInMemory">checkDivisionWithInMemory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.CalcTest" hash-for-method="checkDivisionWithInMemoryValue">checkDivisionWithInMemoryValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.SimpleOrderTest" hash-for-method="checkMultip">checkMultip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkMultiplication(5, 5, 25)">checkMultiplication(5, 5, 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkMultiplication(3, -6, -18)">checkMultiplication(3, -6, -18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkMultiplication(11, 11, 121)">checkMultiplication(11, 11, 121)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.SimpleOrderTest" hash-for-method="checkResta">checkResta</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.GroupsDepsTests" hash-for-method="checkSubstraction">checkSubstraction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.ThreaddsTest" hash-for-method="checkThreads">checkThreads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_Juan" title="tests.CalcTest" hash-for-method="setInToMemory">setInToMemory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Suite_Juan -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,8 +339,122 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Test_Suite_Juan" class="panel Test_Suite_Juan">
+          <div class="suite-Test_Suite_Juan-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.GroupsDepsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMultiplication(0, 3, 0)">
+                  </a> <!-- checkMultiplication(0, 3, 0) -->
+                  <span class="method-name">checkMultiplication</span>
+                  <span class="parameters">(0, 3, 0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [0.0]
+	at tests.GroupsDepsTests.checkMultiplication(GroupsDepsTests.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_Juan-class-failed -->
+          <div class="suite-Test_Suite_Juan-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SimpleOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddition">
+                  </a> <!-- checkAddition -->
+                  <span class="method-name">checkAddition</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [3.5] but found [5.0]
+	at tests.SimpleOrderTest.checkAddition(SimpleOrderTest.java:23)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Suma)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_Juan-class-failed -->
+          <div class="suite-Test_Suite_Juan-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.GroupsDepsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddition">
+                  </a> <!-- checkAddition -->
+                  <span class="method-name">checkAddition</span>
+                  <em>
+(Addition)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDivisionByZero">
+                  </a> <!-- checkDivisionByZero -->
+                  <span class="method-name">checkDivisionByZero</span>
+                  <em>
+(Division by 0 test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMultiplication(5, 5, 25)">
+                  </a> <!-- checkMultiplication(5, 5, 25) -->
+                  <span class="method-name">checkMultiplication</span>
+                  <span class="parameters">(5, 5, 25)</span>
+                  <em>
+(Multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMultiplication(3, -6, -18)">
+                  </a> <!-- checkMultiplication(3, -6, -18) -->
+                  <span class="method-name">checkMultiplication</span>
+                  <span class="parameters">(3, -6, -18)</span>
+                  <em>
+(Multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMultiplication(11, 11, 121)">
+                  </a> <!-- checkMultiplication(11, 11, 121) -->
+                  <span class="method-name">checkMultiplication</span>
+                  <span class="parameters">(11, 11, 121)</span>
+                  <em>
+(Multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSubstraction">
+                  </a> <!-- checkSubstraction -->
+                  <span class="method-name">checkSubstraction</span>
+                  <em>
+(Substraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_Juan-class-passed -->
+          <div class="suite-Test_Suite_Juan-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.CalcTest</span>
@@ -174,101 +497,538 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Test_Suite_Juan-class-passed -->
+          <div class="suite-Test_Suite_Juan-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SimpleOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMultip">
+                  </a> <!-- checkMultip -->
+                  <span class="method-name">checkMultip</span>
+                  <em>
+(Multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResta">
+                  </a> <!-- checkResta -->
+                  <span class="method-name">checkResta</span>
+                  <em>
+(Substraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_Juan-class-passed -->
+          <div class="suite-Test_Suite_Juan-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ThreaddsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThreads">
+                  </a> <!-- checkThreads -->
+                  <span class="method-name">checkThreads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_Juan-class-passed -->
+        </div> <!-- panel Test_Suite_Juan -->
+        <div panel-name="test-xml-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Juan_Rodriguez\AppData\Local\Temp\testng-eclipse--166659967\testng-customsuite.xml</span>
+            <span class="header-content">D:\Tutorial Automation\TestAutomationFundamentals Curse\9 Lesson_XUnit&TestNG\lesson6_javaProject\CalculatorTesting\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite name=&quot;Test Suite Juan&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Calc Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.CalcTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Calc Test --&gt;
+  &lt;test name=&quot;Threads and order tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ThreaddsTest&quot;/&gt;
+      &lt;class name=&quot;tests.SimpleOrderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Threads and order tests --&gt;
+  &lt;test name=&quot;Groups expected Exception, data provider example&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.GroupsDepsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Groups expected Exception, data provider example --&gt;
+&lt;/suite&gt; &lt;!-- Test Suite Juan --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Test Suite Juan</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Calc Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Threads and order tests (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Groups expected Exception, data provider example (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Test Suite Juan</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkAddition</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkMultiplication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkSubstraction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Test Suite Juan</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Test_Suite_Juan');
+function tableData_Test_Suite_Juan() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(44);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkDivision')
-data.setCell(0, 2, 'tests.CalcTest')
-data.setCell(0, 3, 6);
+data.setCell(0, 1, 'checkThreads')
+data.setCell(0, 2, 'tests.ThreaddsTest')
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'setInToMemory')
+data.setCell(1, 1, 'checkDivision')
 data.setCell(1, 2, 'tests.CalcTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkDivisionWithInMemory')
-data.setCell(2, 2, 'tests.CalcTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'checkThreads')
+data.setCell(2, 2, 'tests.ThreaddsTest')
+data.setCell(2, 3, 7);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkDivisionWithInMemoryValue')
-data.setCell(3, 2, 'tests.CalcTest')
-data.setCell(3, 3, 0);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(3, 1, 'checkThreads')
+data.setCell(3, 2, 'tests.ThreaddsTest')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'setInToMemory')
+data.setCell(4, 2, 'tests.CalcTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkThreads')
+data.setCell(5, 2, 'tests.ThreaddsTest')
+data.setCell(5, 3, 5);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkThreads')
+data.setCell(6, 2, 'tests.ThreaddsTest')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkThreads')
+data.setCell(7, 2, 'tests.ThreaddsTest')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkDivisionWithInMemory')
+data.setCell(8, 2, 'tests.CalcTest')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkThreads')
+data.setCell(9, 2, 'tests.ThreaddsTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkThreads')
+data.setCell(10, 2, 'tests.ThreaddsTest')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkThreads')
+data.setCell(11, 2, 'tests.ThreaddsTest')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkAddition')
+data.setCell(12, 2, 'tests.SimpleOrderTest')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkMultiplication')
+data.setCell(13, 2, 'tests.GroupsDepsTests')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkDivisionWithInMemoryValue')
+data.setCell(14, 2, 'tests.CalcTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkMultip')
+data.setCell(15, 2, 'tests.SimpleOrderTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkThreads')
+data.setCell(16, 2, 'tests.ThreaddsTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkThreads')
+data.setCell(17, 2, 'tests.ThreaddsTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkThreads')
+data.setCell(18, 2, 'tests.ThreaddsTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkThreads')
+data.setCell(19, 2, 'tests.ThreaddsTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'checkThreads')
+data.setCell(20, 2, 'tests.ThreaddsTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkThreads')
+data.setCell(21, 2, 'tests.ThreaddsTest')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkThreads')
+data.setCell(22, 2, 'tests.ThreaddsTest')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'checkThreads')
+data.setCell(23, 2, 'tests.ThreaddsTest')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'checkThreads')
+data.setCell(24, 2, 'tests.ThreaddsTest')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'checkThreads')
+data.setCell(25, 2, 'tests.ThreaddsTest')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'checkResta')
+data.setCell(26, 2, 'tests.SimpleOrderTest')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'checkThreads')
+data.setCell(27, 2, 'tests.ThreaddsTest')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkSubstraction')
+data.setCell(28, 2, 'tests.GroupsDepsTests')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'checkMultiplication')
+data.setCell(29, 2, 'tests.GroupsDepsTests')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'checkDivisionByZero')
+data.setCell(30, 2, 'tests.GroupsDepsTests')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'checkMultiplication')
+data.setCell(31, 2, 'tests.GroupsDepsTests')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'checkAddition')
+data.setCell(32, 2, 'tests.GroupsDepsTests')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'checkThreads')
+data.setCell(33, 2, 'tests.ThreaddsTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'checkThreads')
+data.setCell(34, 2, 'tests.ThreaddsTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'checkThreads')
+data.setCell(35, 2, 'tests.ThreaddsTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkThreads')
+data.setCell(36, 2, 'tests.ThreaddsTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkThreads')
+data.setCell(37, 2, 'tests.ThreaddsTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'checkThreads')
+data.setCell(38, 2, 'tests.ThreaddsTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkThreads')
+data.setCell(39, 2, 'tests.ThreaddsTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'checkThreads')
+data.setCell(40, 2, 'tests.ThreaddsTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'checkThreads')
+data.setCell(41, 2, 'tests.ThreaddsTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'checkThreads')
+data.setCell(42, 2, 'tests.ThreaddsTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'checkMultiplication')
+data.setCell(43, 2, 'tests.GroupsDepsTests')
+data.setCell(43, 3, 0);
+window.suiteTableData['Test_Suite_Juan']= { tableData: data, tableDiv: 'times-div-Test_Suite_Juan'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 79 ms</span>
+              <div id="times-div-Test_Suite_Juan">
+              </div> <!-- times-div-Test_Suite_Juan -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Test Suite Juan</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Test_Suite_Juan" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -281,24 +1041,205 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkDivision</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">setInToMemory</span>
-                <span class="method-start">23 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkDivisionWithInMemory</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkDivisionWithInMemoryValue</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDivisionWithInMemory</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">cleaner</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SimpleOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initCalculator</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkResta</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkAddition</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMultip</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ThreaddsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">82 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">92 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">97 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">98 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkThreads</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GroupsDepsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initCalculator</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkSubstraction</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAddition</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMultiplication(5, 5, 25)</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMultiplication(3, -6, -18)</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkMultiplication(0, 3, 0)</span>
+                <span class="method-start">123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMultiplication(11, 11, 121)</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDivisionByZero</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
