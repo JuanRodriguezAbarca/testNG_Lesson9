@@ -7,6 +7,8 @@ import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
+import tests.SimpleTest;
+
 import com.beust.testng.TestNG;
 
 
@@ -16,7 +18,7 @@ public class Runner {
 	public static void main(String[] args){
 		//create xml suite named 'Test Suite'
 		XmlSuite suite = new XmlSuite();
-		suite.setName("Test Suite");
+		suite.setName("Test Suite Juan");
 		
 		//Create XmlTest
 		XmlTest test = new XmlTest(suite);
