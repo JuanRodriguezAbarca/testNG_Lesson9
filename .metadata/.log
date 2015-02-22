@@ -1571,3 +1571,81 @@ java -ea -classpath /D:/Eclipse/eclipse/plugins/org.testng.eclipse_6.8.6.2014120
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 13:36:27.908
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2015-02-22 13:37:10.797
+!MESSAGE An exception occurred during push on URI https://github.com/JuanRodriguezAbarca/testNG_Lesson9.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1170)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:298)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-02-22 13:37:10.801
+!MESSAGE Can't connect to any repository: https://github.com/JuanRodriguezAbarca/testNG_Lesson9.git (Nothing to push.)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:47:44.716
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:47:44.725
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:47:49.087
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:47:49.089
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:02.772
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:02.774
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:15.487
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:15.489
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:20.346
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:20.349
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:26.378
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:26.380
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:50.489
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:50.491
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:54.886
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:54.889
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:57.190
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-02-22 14:48:57.193
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2015-02-22 14:49:16.362
+!MESSAGE An exception occurred during push on URI https://github.com/JuanRodriguezAbarca/testNG_Lesson9.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1170)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:298)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-02-22 14:49:16.364
+!MESSAGE Can't connect to any repository: https://github.com/JuanRodriguezAbarca/testNG_Lesson9.git (Nothing to push.)

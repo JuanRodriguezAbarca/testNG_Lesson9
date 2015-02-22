@@ -1,0 +1,16 @@
+package app;
+import org.testng.annotations.Factory;
+
+
+public class TestFactory{
+		
+	@Factory
+	public Object[] createTestInstances(){
+		Object[] result = new Object[10];
+		for (int i = 0; i<10; i++){
+			result[i]= new TestForFactory(i*10);
+		}
+		return result;
+	}
+
+}
