@@ -1,0 +1,52 @@
+package tests;
+
+import org.testng.Assert;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import app.Calculator;
+import app.DivisionByZeroException;
+
+public class GroupsDepsTests {
+	
+	private final double firstValue = 10;
+	private final double secondValue = 5;
+	
+	private Calculator calculator;
+	
+	@BeforeClass(description="Initilaizing")
+	public void initCalculator(){
+		calculator = new Calculator();
+	}
+	
+	@Test(description="Addition", groups = {"positive"})
+	public void checkAddition(){
+		Assert.assertEquals(firstValue + secondValue,calculator.suma(firstValue, secondValue));
+	}
+	
+	@Test(description="Substraction", groups = {"positive"})
+	public void checkSubstraction(){
+		Assert.assertEquals(firstValue-secondValue, calculator.resta(firstValue, secondValue));
+	}
+	
+	@Test(description="Multiplication", groups = {"positive"}, dataProvider="multiplication")
+	public void checkMultiplication(double first, double second, double result){
+		Assert.assertEquals(first*second,calculator.multiplication(first, second),result);
+	}
+	
+	
+	//dependsOnGroup example
+	@Test(description="Division by 0 test", expectedExceptions={DivisionByZeroException.class}, dependsOnGroups="positive",alwaysRun=true)
+	public void checkDivisionByZero(){
+		calculator.division(firstValue, 0);
+	}
+	
+	//data provider for multiplication
+	@DataProvider(name="multiplication")
+	public Object[][] prepareMultiplicationData(){
+		return new Object[][] {new Object[]{5,5,25}, new Object[] {3,-6,-18}, new Object[]{0,3,0}, new Object[]{11,11,121}};
+	}
+
+}

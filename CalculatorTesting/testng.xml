@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+<suite name="Test Suite Juan" parallel="methods" thread-count="5"> 
+  <test verbose="1" name="Calc Test" annotations="JDK"> 
+    <classes> 
+      <class name="tests.CalcTest"/> 
+    </classes> 
+  </test> 
+  <test name="Threads and order tests">
+  	<classes>
+  		<class name="tests.ThreaddsTest"/>
+  		<class name="tests.SimpleOrderTest"/>
+  	</classes>
+  </test>
+  <test name="Groups expected Exception, data provider example">
+  	<classes>
+  		<class name = "tests.GroupsDepsTests"/>
+  	</classes>
+  </test>
+</suite> 

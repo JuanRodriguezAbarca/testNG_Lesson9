@@ -1,22 +1,37 @@
 package core;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.testng.TestListenerAdapter;
+import org.testng.TestNG;
+import org.testng.xml.Parser;
 import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
+import org.xml.sax.SAXException;
 
 import tests.SimpleTest;
 
-import com.beust.testng.TestNG;
 
 
 public class Runner {
 	
-	@SuppressWarnings("deprecation")
-	public static void main(String[] args){
-		//create xml suite named 'Test Suite'
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException{
+		
+		TestNG testng = new TestNG();
+		for(XmlSuite suite : new Parser("./testng.xml").parseToList()){
+			testng.setCommandLineSuite(suite);
+		}
+		testng.run();
+	}
+	
+	/**
+	 * 		
+	 * //create xml suite named 'Test Suite'
 		XmlSuite suite = new XmlSuite();
 		suite.setName("Test Suite Juan");
 		
@@ -40,6 +55,6 @@ public class Runner {
 		
 		// run suite
 		testNG.run();
-	}
+	 */
 
 }

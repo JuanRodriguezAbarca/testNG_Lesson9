@@ -1,0 +1,14 @@
+package app;
+
+public class DivisionByZeroException extends RuntimeException {
+	
+	public DivisionByZeroException(){
+		this("Division By Zero!!!");
+	}
+	
+	public DivisionByZeroException(String message){
+		super(message);
+	}
+
+	
+}

@@ -1,0 +1,10 @@
+package tests;
+
+import static org.testng.AssertJUnit.assertTrue;
+
+public class SimpleTest {
+	public void simpleTest(){
+		assertTrue("The input was false", true);
+	}
+
+}

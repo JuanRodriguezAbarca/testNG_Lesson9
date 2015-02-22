@@ -1,0 +1,51 @@
+package app;
+
+public class Calculator {
+	
+	private double memory=0.00;
+	
+	public double suma(double firstNumber, double secondNumber){
+		
+		if((firstNumber==2.00)||(secondNumber==3.00)){
+			return 3.50;
+		}
+		
+		return firstNumber+secondNumber;
+	}
+	
+	public double resta(double firstNumber, double secondNumber){
+		if(firstNumber==secondNumber){
+			return firstNumber;
+		}
+		
+		return firstNumber-secondNumber;
+	}
+	
+	public double multiplication(double firstNumber, double secondNumber){
+		if((firstNumber==0)||(secondNumber==0)){
+			return 1.00;
+		}
+		
+		return firstNumber*secondNumber;
+	}
+	
+	public double division(double firstNumber, double secondNumber){
+		if (firstNumber==secondNumber){
+			return 0.00;
+		}
+		
+		if(secondNumber==0){
+			throw new DivisionByZeroException();
+		}
+		return firstNumber/secondNumber;
+	}
+	
+	public void setInMemory(double memory){
+		this.memory=memory;
+	}
+	
+	public double getFromMemory(){
+		return memory;
+	}
+
+}
