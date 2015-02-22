@@ -1,0 +1,11 @@
+import org.testng.annotations.DataProvider;
+
+
+public class DataProviderForTests {
+	
+	@DataProvider(name="OperandsForOperations")
+	public Object[][] dataReturnedToTests(){
+		return new Object[][]{new Object[]{"fdasda"},new Object[]{"dfasdfadsfasdfa"},new Object[]{"fgdasfdsafa"}};
+	}
+
+}

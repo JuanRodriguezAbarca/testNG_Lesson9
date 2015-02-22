@@ -1,0 +1,18 @@
+import org.testng.annotations.Test;
+
+
+public class TestForFactory {
+	private static int attempt;
+	
+
+	public TestForFactory(int attempt){
+		this.attempt=attempt;
+	}
+	
+	@Test(description="Show Attempt")
+	public static void attamptTest(){
+		System.out.println(attempt);
+	}
+	
+
+}

@@ -1,0 +1,14 @@
+
+public class DataProviderForTests {
+	
+	@DataProvider(name="TestData")
+	public Object[][] void testDataFor(){
+		
+	}
+	
+	@Test
+	public void testMindas(){
+		assertTrue(false);
+	}
+
+}

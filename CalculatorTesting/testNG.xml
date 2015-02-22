@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Calculator suite" parallel "methods" thread-count="5">
+	<test verbose="1" name="Calc test" annotations="JDK">
+		<classes>
+			<class name = "MindasYOstias"/>
+		</classes>
+	</test>
+	<test name="Groups, expected exception, data provider example">
+		<classes>
+			<class name="MasMindas">
+		</classes>
+	</test>
+</suite>	

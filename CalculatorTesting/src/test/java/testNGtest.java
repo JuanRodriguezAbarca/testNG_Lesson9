@@ -1,3 +1,5 @@
+import static org.testng.AssertJUnit.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -5,9 +7,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class testNGtest {
+public class testNGtest extends DataProviderForTests{
 	
-	WebDriver driver = new FirefoxDriver();
+//	WebDriver driver = new FirefoxDriver();
 	
 //	@BeforeClass
 //	public void opener(){
@@ -29,9 +31,51 @@ public class testNGtest {
 		return new Object[][]{new Object[]{"2*2"}, new Object[]{"3+5"}};
 	}
 	
+	@Test(dataProvider="DifferentSums")
+	public void sumaTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(dataProvider="DifferentSubstractions")
+	public void subsTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(dataProvider="DifferentMultip")
+	public void multipTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(expectedExceptions=ArithmeticException.class)
+	public void divisionCheck(){
+		int firstValue=5;
+		int secondValue=0;
+		if(secondValue==0){
+			throw new ArithmeticException("Division by zero from the method");
+		}
+		int result=firstValue/secondValue;
+		System.out.println(result);
+	}
+	
 	@Test
-	public void dataProviderTest(){
-		
+	public void tontuna(){
+		System.out.println("Output");
+		assertTrue("TestCase failed, result is false",false);
+	}
+	
+	@Test(expectedExceptions=RuntimeException.class, expectedExceptionsMessageRegExp=".* values aren't .*")
+	public void checkValuesTest(){
+		checkValues(5,10);
+	}
+	
+	public void checkValues(int firstValue, int secondValue){
+		if(firstValue!=secondValue)
+			throw new RuntimeException(firstValue+" and "+secondValue+" values aren't the same");
+	}
+	
+	@Test(threadPoolSize=5, invocationCount=30,invocationTimeOut=10000)
+	public void checkThreads(){
+		System.out.println("Thread: "+Thread.currentThread().getId());
 	}
 
 }

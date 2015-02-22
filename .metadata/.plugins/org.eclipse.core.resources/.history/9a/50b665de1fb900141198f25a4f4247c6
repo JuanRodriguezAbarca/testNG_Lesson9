@@ -1,0 +1,9 @@
+
+public class DataProviderForTests {
+	
+	@DataProvider(name="TestData")
+	public Object[][] void testDataFor(){
+		
+	}
+
+}

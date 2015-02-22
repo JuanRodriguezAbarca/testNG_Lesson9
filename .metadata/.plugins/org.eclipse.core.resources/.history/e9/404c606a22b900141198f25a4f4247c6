@@ -1,0 +1,11 @@
+import org.testng.annotations.DataProvider;
+
+
+public class DataProviderForTests {
+	
+	@DataProvider(name="OperandsForOperations")
+	public void dataReturnedToTests(){
+		
+	}
+
+}

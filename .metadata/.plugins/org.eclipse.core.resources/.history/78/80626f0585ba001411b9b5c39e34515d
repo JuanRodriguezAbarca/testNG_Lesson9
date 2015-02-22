@@ -1,0 +1,76 @@
+import static org.testng.AssertJUnit.assertTrue;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class testNGtest extends DataProviderForTests{
+	
+//	WebDriver driver = new FirefoxDriver();
+	
+//	@BeforeClass
+//	public void opener(){
+//		driver.get("https://www.google.es/");
+//	}
+//	
+//	@AfterClass
+//	public void closer(){
+//		driver.close();
+//	}
+	
+	@Test(dataProvider="execute-strings")
+	public void executeOperation(String s){
+		System.out.println("execute "+s);
+	}
+	
+	@DataProvider(name="execute-strings")
+	public Object[][] resultMethod(){
+		return new Object[][]{new Object[]{"2*2"}, new Object[]{"3+5"}};
+	}
+	
+	@Test(dataProvider="DifferentSums")
+	public void sumaTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(dataProvider="DifferentSubstractions")
+	public void subsTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(dataProvider="DifferentMultip")
+	public void multipTest(int input){
+		System.out.println(input);
+	}
+	
+	@Test(expectedExceptions=ArithmeticException.class)
+	public void divisionCheck(){
+		int firstValue=5;
+		int secondValue=0;
+		if(secondValue==0){
+			throw new ArithmeticException("Division by zero from the method");
+		}
+		int result=firstValue/secondValue;
+		System.out.println(result);
+	}
+	
+	@Test
+	public void tontuna(){
+		System.out.println("Output");
+		assertTrue("TestCase failed, result is false",false);
+	}
+	
+	@Test(expectedExceptions=RuntimeException.class, expectedExceptionsMessageRegExp="First value: and the second: isn't equals")
+	public void checkValuesTest(){
+		checkValues(5,10);
+	}
+	
+	public void checkValues(int firstValue, int secondValue){
+		if(firstValue!=secondValue)
+			throw new RuntimeException("First value: "+firstValue+" and the second: "+secondValue+" isn't equals");
+	}
+
+}
