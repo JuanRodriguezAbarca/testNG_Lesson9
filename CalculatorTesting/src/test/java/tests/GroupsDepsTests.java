@@ -1,5 +1,6 @@
 package tests;
 
+import static org.testng.AssertJUnit.assertTrue;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeClass;
@@ -33,7 +34,7 @@ public class GroupsDepsTests {
 	
 	@Test(description="Multiplication", groups = {"positive"}, dataProvider="multiplication")
 	public void checkMultiplication(double first, double second, double result){
-		Assert.assertEquals(first*second,calculator.multiplication(first, second));
+		assertTrue("Result is not as expected, "+first+" * "+second+" = "+first*second+" and found: "+calculator.multiplication(first, second) ,first*second==calculator.multiplication(first, second));
 	}
 	
 	
